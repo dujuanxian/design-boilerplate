@@ -2,6 +2,63 @@
 @import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
 
-body {
-	font-family: 'Didact Gothic', sans-serif;
+/*color*/
+$light-color: white;
+$main-color: #80a8cc;
+$bg-color: #f2eee8;
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: $bg-color;
+}
+
+.header {
+    background-color: $light-color;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+}
+
+.self {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: $main-color;
+}
+
+.main {
+    margin: 0 auto;
+    width: 60%;
+    float: left;
+    background-color: $bg-color;
+
+    .nav {
+        height: 100px;
+        margin: 30px 30px 0 30px;
+        background-color: $light-color;
+    }
+}
+
+.social {
+    width: 20%;
+    height: 100%;
+    float: right;
+    background-color: $light-color;
+}
+
+
