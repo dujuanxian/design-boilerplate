@@ -1,11 +1,12 @@
 @import "compass/reset";
 @import "compass/css3";
-@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import "fontello";
 
 /*color*/
 $light-color: white;
 $main-color: #80a8cc;
+$dark-main-color: #6c94b8;
 $bg-color: #f2eee8;
 $font-color: #999999;
 $dark-font-color: #353e48;
@@ -59,6 +60,7 @@ html, body {
 
 body {
     font-family: 'Didact Gothic', sans-serif;
+    font-weight: 100;
     background-color: $bg-color;
 }
 
@@ -131,18 +133,48 @@ body {
     }
 }
 
-.content {
-    width: 100%;
-    position: absolute;
-    top: $header-height;
-    bottom: 0;
-}
-
 .self {
     width: 20%;
     height: 100%;
     float: left;
     background-color: $main-color;
+    color: $light-color;
+    font-size: 12px;
+    text-align: center;
+    .self-content {
+        padding-left: 5%;
+        padding-right: 5%;
+        .self-image {
+            margin: 50px auto 10px auto;
+            @include background-square-image("../images/cube-resized.jpg", 60px);
+            @include border-radius(50%);
+        }
+        .name {
+            font-weight: 600;
+            line-height: 24px;
+        }
+        a {
+            color: $light-color;
+            text-decoration: initial;
+        }
+        .blog-link {
+            line-height: 40px;
+        }
+        .follow-link {
+            display: inline-block;
+            width: 80px;
+            line-height: 30px;
+            background-color: $dark-main-color;
+            @include border-radius(15px);
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: $header-height;
+    bottom: 0;
 }
 
 .main {
