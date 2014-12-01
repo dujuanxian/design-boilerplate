@@ -228,6 +228,20 @@ body {
     height: 100%;
     float: right;
     background-color: $light-color;
+    .trends {
+        @include aside-padding(5%);
+        font-size: 12px;
+        text-align: left;
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: $dark-font-color;
+        }
+        li {
+            color: $main-color;
+            line-height: 20px;
+        }
+    }
 }
 
 

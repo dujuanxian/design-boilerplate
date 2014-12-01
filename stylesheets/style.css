@@ -438,3 +438,21 @@ body {
   float: right;
   background-color: white;
 }
+/* line 231, ../sass/style.scss */
+.social .trends {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 12px;
+  text-align: left;
+}
+/* line 235, ../sass/style.scss */
+.social .trends h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #353e48;
+}
+/* line 240, ../sass/style.scss */
+.social .trends li {
+  color: #80a8cc;
+  line-height: 20px;
+}
