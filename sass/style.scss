@@ -51,6 +51,11 @@ $header-element-height: 26px;
     box-shadow: $top $left $blur $color;
 }
 
+@mixin aside-padding($size) {
+    padding-left: $size;
+    padding-right: $size;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -61,6 +66,8 @@ html, body {
 body {
     font-family: 'Didact Gothic', sans-serif;
     font-weight: 100;
+    font-size: 10px;
+    line-height: 13px;
     background-color: $bg-color;
 }
 
@@ -72,8 +79,6 @@ body {
     height: $header-height;
     position: fixed;
     top: 0;
-    font-size: 10px;
-
     .feature-logo, .socials-list, .search-form, .twitter-logo {
         line-height: $header-height;
     }
@@ -139,11 +144,9 @@ body {
     float: left;
     background-color: $main-color;
     color: $light-color;
-    font-size: 12px;
     text-align: center;
     .self-content {
-        padding-left: 5%;
-        padding-right: 5%;
+        @include aside-padding(5%);
         .self-image {
             margin: 40px auto 10px auto;
             @include background-square-image("../images/cube-resized.jpg", 60px);
@@ -169,6 +172,7 @@ body {
         }
     }
     .self-images {
+        display: inline-block;
         ul {
             margin-top: 30px;
             li {
@@ -180,10 +184,28 @@ body {
             }
         }
     }
+    .activities {
+        @include aside-padding(5%);
+        margin-top: 30px;
+        color: $dark-main-color;
+        text-align: left;
+        h2 {
+            color: $light-color;
+            text-transform: uppercase;
+            line-height: 20px;
+        }
+        li {
+            line-height: 18px;
+            a {
+                color: $light-color;
+            }
+        }
+    }
 }
 
 .content {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: $header-height;
     bottom: 0;
