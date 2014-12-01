@@ -8,6 +8,14 @@ $light-color: white;
 $main-color: #80a8cc;
 $bg-color: #f2eee8;
 
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
 html, body{
     height: 100%;
     width: 100%;
@@ -26,6 +34,10 @@ body {
     height: 60px;
     position: fixed;
     top: 0;
+
+    .logo {
+        @include border-radius(10px)
+    }
 }
 
 .content {
