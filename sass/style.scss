@@ -145,7 +145,7 @@ body {
         padding-left: 5%;
         padding-right: 5%;
         .self-image {
-            margin: 50px auto 10px auto;
+            margin: 40px auto 10px auto;
             @include background-square-image("../images/cube-resized.jpg", 60px);
             @include border-radius(50%);
         }
@@ -166,6 +166,18 @@ body {
             line-height: 30px;
             background-color: $dark-main-color;
             @include border-radius(15px);
+        }
+    }
+    .self-images {
+        ul {
+            margin-top: 30px;
+            li {
+                width: 33.3%;
+                float: left;
+                img {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }

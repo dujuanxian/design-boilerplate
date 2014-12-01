@@ -326,13 +326,13 @@ body {
   text-align: center;
 }
 /* line 144, ../sass/style.scss */
-.self article {
+.self .self-content {
   padding-left: 5%;
   padding-right: 5%;
 }
 /* line 147, ../sass/style.scss */
-.self article .self-image {
-  margin: 50px auto 10px auto;
+.self .self-content .self-image {
+  margin: 40px auto 10px auto;
   width: 60px;
   height: 60px;
   background: url("../images/cube-resized.jpg") no-repeat 0 0;
@@ -344,21 +344,21 @@ body {
   border-radius: 50%;
 }
 /* line 152, ../sass/style.scss */
-.self article .name {
+.self .self-content .name {
   font-weight: 600;
   line-height: 24px;
 }
 /* line 156, ../sass/style.scss */
-.self article a {
+.self .self-content a {
   color: white;
   text-decoration: initial;
 }
 /* line 160, ../sass/style.scss */
-.self article .blog-link {
+.self .self-content .blog-link {
   line-height: 40px;
 }
 /* line 163, ../sass/style.scss */
-.self article .follow-link {
+.self .self-content .follow-link {
   display: inline-block;
   width: 80px;
   line-height: 30px;
@@ -369,8 +369,21 @@ body {
   -o-border-radius: 15px;
   border-radius: 15px;
 }
-
+/* line 172, ../sass/style.scss */
+.self .self-images ul {
+  margin-top: 30px;
+}
 /* line 174, ../sass/style.scss */
+.self .self-images ul li {
+  width: 33.3%;
+  float: left;
+}
+/* line 177, ../sass/style.scss */
+.self .self-images ul li img {
+  max-width: 100%;
+}
+
+/* line 185, ../sass/style.scss */
 .content {
   width: 100%;
   position: absolute;
@@ -378,20 +391,20 @@ body {
   bottom: 0;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .main {
   margin: 0 auto;
   width: 60%;
   background-color: #f2eee8;
 }
-/* line 186, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .main .nav {
   height: 100px;
   margin: 30px 30px 0 30px;
   background-color: white;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .social {
   width: 20%;
   height: 100%;
