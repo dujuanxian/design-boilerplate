@@ -436,23 +436,65 @@ body {
   width: 20%;
   height: 100%;
   float: right;
-  background-color: white;
-}
-/* line 231, ../sass/style.scss */
-.social .trends {
-  padding-left: 5%;
-  padding-right: 5%;
   font-size: 12px;
   text-align: left;
+  background-color: white;
 }
-/* line 235, ../sass/style.scss */
-.social .trends h2 {
+/* line 233, ../sass/style.scss */
+.social .trends, .social .followers {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 236, ../sass/style.scss */
+.social h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   color: #353e48;
 }
-/* line 240, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .social .trends li {
   color: #80a8cc;
   line-height: 20px;
+}
+/* line 248, ../sass/style.scss */
+.social .followers .more {
+  float: right;
+  color: #80a8cc;
+}
+/* line 252, ../sass/style.scss */
+.social .followers li {
+  display: inline-block;
+  line-height: 50px;
+  width: 100%;
+}
+/* line 256, ../sass/style.scss */
+.social .followers li img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 264, ../sass/style.scss */
+.social .followers li .follower {
+  margin: 10px 35px 10px 10px;
+  line-height: 16px;
+}
+/* line 267, ../sass/style.scss */
+.social .followers li .follower .follower-name {
+  color: #353e48;
+}
+/* line 270, ../sass/style.scss */
+.social .followers li .follower .follower-title {
+  color: #999999;
+}
+/* line 274, ../sass/style.scss */
+.social .followers li i {
+  float: right;
+  color: #353e48;
 }

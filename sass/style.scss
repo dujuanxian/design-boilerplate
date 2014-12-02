@@ -227,19 +227,54 @@ body {
     width: 20%;
     height: 100%;
     float: right;
+    font-size: 12px;
+    text-align: left;
     background-color: $light-color;
-    .trends {
+    .trends, .followers {
         @include aside-padding(5%);
-        font-size: 12px;
-        text-align: left;
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: $dark-font-color;
-        }
+    }
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: $dark-font-color;
+    }
+    .trends {
         li {
             color: $main-color;
             line-height: 20px;
+        }
+    }
+    .followers {
+        .more {
+            float: right;
+            color: $main-color;
+        }
+        li {
+            display: inline-block;
+            line-height: 50px;
+            width: 100%;
+            img {
+                margin-top: 10px;
+                width: 30px;
+                height: 30px;
+                float: left;
+                margin-right: 5px;
+                @include border-radius(50%);
+            }
+            .follower {
+                margin: 10px 35px 10px 10px;
+                line-height: 16px;
+                .follower-name {
+                    color: $dark-font-color;
+                }
+                .follower-title {
+                    color: $font-color;
+                }
+            }
+            i {
+                float: right;
+                color: $dark-font-color;
+            }
         }
     }
 }
