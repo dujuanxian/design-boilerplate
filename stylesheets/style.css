@@ -425,16 +425,19 @@ body {
   background-color: #f2eee8;
 }
 /* line 219, ../sass/style.scss */
-.main nav {
+.main nav, .main .posts {
   margin: 30px 30px 0 30px;
   background-color: white;
+}
+/* line 224, ../sass/style.scss */
+.main nav {
   font-size: 11px;
 }
-/* line 223, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .main nav ul {
   width: 100%;
 }
-/* line 225, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .main nav ul li {
   text-align: center;
   width: 24.5%;
@@ -443,20 +446,84 @@ body {
   padding-bottom: 15px;
   line-height: 15px;
 }
-/* line 232, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .main nav ul li .nav-item-title {
   color: #999999;
 }
-/* line 235, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .main nav ul li .nav-item-count {
   color: #353e48;
 }
-/* line 238, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .main nav ul li:hover {
   border-bottom: 3px solid #80a8cc;
 }
+/* line 248, ../sass/style.scss */
+.main .posts {
+  color: #999999;
+}
+/* line 250, ../sass/style.scss */
+.main .posts .post {
+  padding: 25px;
+  border-bottom: 1px solid #f2eee8;
+}
+/* line 253, ../sass/style.scss */
+.main .posts .post .post-image {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+/* line 259, ../sass/style.scss */
+.main .posts .post .post-content {
+  margin-left: 40px;
+}
+/* line 261, ../sass/style.scss */
+.main .posts .post .post-content header {
+  line-height: 20px;
+  font-size: 11px;
+}
+/* line 264, ../sass/style.scss */
+.main .posts .post .post-content header .post-name {
+  color: #353e48;
+  font-weight: 600;
+}
+/* line 268, ../sass/style.scss */
+.main .posts .post .post-content header .post-time {
+  float: right;
+}
+/* line 272, ../sass/style.scss */
+.main .posts .post .post-content img, .main .posts .post .post-content video {
+  width: 100%;
+  height: auto;
+}
+/* line 276, ../sass/style.scss */
+.main .posts .post .post-content footer {
+  font-size: 12px;
+}
+/* line 278, ../sass/style.scss */
+.main .posts .post .post-content footer ul {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+/* line 282, ../sass/style.scss */
+.main .posts .post .post-content footer ul li {
+  display: inline-block;
+  width: 25px;
+}
+/* line 286, ../sass/style.scss */
+.main .posts .post .post-content footer ul .last-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-/* line 246, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .social {
   width: 20%;
   height: 100%;
@@ -465,34 +532,34 @@ body {
   text-align: left;
   background-color: white;
 }
-/* line 253, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .social .trends, .social .followers {
   padding-left: 5%;
   padding-right: 5%;
 }
-/* line 256, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .social h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   color: #353e48;
 }
-/* line 262, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .social .trends li {
   color: #80a8cc;
   line-height: 20px;
 }
-/* line 268, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .social .followers .more {
   float: right;
   color: #80a8cc;
 }
-/* line 272, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .social .followers li {
   display: inline-block;
   line-height: 50px;
   width: 100%;
 }
-/* line 276, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .social .followers li img {
   margin-top: 10px;
   width: 30px;
@@ -505,20 +572,20 @@ body {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 284, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .social .followers li .follower {
   margin: 10px 35px 10px 10px;
   line-height: 16px;
 }
-/* line 287, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .social .followers li .follower .follower-name {
   color: #353e48;
 }
-/* line 290, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .social .followers li .follower .follower-title {
   color: #999999;
 }
-/* line 294, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .social .followers li i {
   float: right;
   color: #353e48;

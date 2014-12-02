@@ -216,9 +216,12 @@ body {
     width: 60%;
     background-color: $bg-color;
 
-    nav {
+    nav, .posts {
         margin: 30px 30px 0 30px;
         background-color: $light-color;
+    }
+
+    nav {
         font-size: 11px;
         ul {
             width: 100%;
@@ -237,6 +240,55 @@ body {
                 }
                 &:hover {
                     border-bottom: 3px solid $main-color;
+                }
+            }
+        }
+    }
+
+    .posts {
+        color: $font-color;
+        .post {
+            padding: 25px;
+            border-bottom: 1px solid $bg-color;
+            .post-image {
+                @include border-radius(50%);
+                width: 25px;
+                height: 25px;
+                float: left;
+            }
+            .post-content {
+                margin-left: 40px;
+                header {
+                    line-height: 20px;
+                    font-size: 11px;
+                    .post-name {
+                        color: $dark-font-color;
+                        font-weight: 600;
+                    }
+                    .post-time {
+                        float: right;
+                    }
+                }
+                img, video {
+                    width: 100%;
+                    height: auto;
+                }
+                footer {
+                    font-size: 12px;
+                    ul {
+                        width: 100%;
+                        position: relative;
+                        margin-top: 15px;
+                        li {
+                            display: inline-block;
+                            width: 25px;
+                        }
+                        .last-icon {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                    }
                 }
             }
         }

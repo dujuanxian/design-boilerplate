@@ -114,3 +114,5 @@
 }
 
 /* '' */
+
+.icon-arrows-cw:before { content: '\e801'; } /* '' */
